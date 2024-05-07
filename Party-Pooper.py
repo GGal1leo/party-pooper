@@ -40,7 +40,7 @@ print('')
 import subprocess
 
 # Start Bluetooth service if not already started
-subprocess.run(['sudo', 'service', 'bluetooth', 'start'], check=True)
+subprocess.run(['sudo', 'systemctl', 'start', 'bluetooth'], check=True)
 
 def scan():
     # Launch xterm window and run hcitool scan inside it
